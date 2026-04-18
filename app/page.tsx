@@ -42,15 +42,15 @@ export default function Home() {
           </p>
           <BookDemoButton size="large" />
 
-          {/* Demo video placeholder */}
-          <div className="mt-14 rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-[#1a3560] aspect-video flex flex-col items-center justify-center gap-3">
-            <svg className="w-14 h-14 text-white/20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-                d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-            </svg>
-            <span className="text-white/30 text-sm font-medium tracking-wide uppercase">Demo Video</span>
+          {/* Demo video */}
+          <div className="mt-14 rounded-xl overflow-hidden border border-white/10 shadow-2xl aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/oL4mpEEuL5I"
+              title="Filament Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
           </div>
         </div>
       </section>

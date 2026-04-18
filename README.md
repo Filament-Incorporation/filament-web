@@ -21,7 +21,6 @@ Opens at [http://localhost:3000](http://localhost:3000).
 
 ## Placeholders to replace
 
-- **Demo video** — swap the placeholder box in the Hero section with a real embed
 - **Calendly URL** — update `CALENDLY_URL` at the top of `app/page.tsx`
 - **Contact email** — update `CONTACT_EMAIL` at the top of `app/page.tsx`
 - **University logos** — add to the Social Proof section as deals close
