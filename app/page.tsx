@@ -1,4 +1,4 @@
-const CALENDLY_URL = "https://calendly.com/hasnain-filamentplatform/30min";
+const CALENDLY_URL = "https://calendly.com/filamentplatform/30min";
 const CONTACT_EMAIL = "hello@filamentplatform.com";
 
 function BookDemoButton({ size = "default" }: { size?: "default" | "large" }) {
