@@ -233,7 +233,7 @@ export default function Home() {
               href={`mailto:${CONTACT_EMAIL}`}
               className="text-slate-400 hover:text-white text-sm transition-colors"
             >
-              {CONTACT_EMAIL}
+              {CONTACT_EMAIL} <br />
               {CALENDLY_URL}
             </a>
           </div>
