@@ -38,7 +38,7 @@ export default function Home() {
             Your students are missing scholarships they qualify for. Filament fixes that.
           </h1>
           <p className="text-slate-300 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-            Filament is the scholarship navigator for your students — a chatbot that answers financial aid questions instantly with citations from your own official sources.
+            Filament is a chatbot that answers your students&apos; scholarship questions instantly — always accurate, always cited, always from your official sources.
           </p>
           <BookDemoButton size="large" />
 
