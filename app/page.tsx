@@ -26,7 +26,7 @@ export default function Home() {
       <section className="bg-[#0f2244] text-white px-6 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[#e07b2a] text-sm font-semibold uppercase tracking-widest mb-4">
-            For Canadian University Administrators
+            For Canadian University Financial Aid Offices
           </p>
           <h1
             className="font-bold leading-tight mb-6"
@@ -35,10 +35,10 @@ export default function Home() {
               fontSize: "clamp(3rem, 5vw, 3.75rem)",
             }}
           >
-            Stop Answering the Same Scholarship Questions Every Day
+            Your students are missing scholarships they qualify for. Filament fixes that.
           </h1>
           <p className="text-slate-300 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-            Filament is the scholarship navigator for your students — an AI chatbot that answers financial aid questions instantly, accurately, and with citations from your own official sources.
+            Filament is the scholarship navigator for your students — a chatbot that answers financial aid questions instantly with citations from your own official sources.
           </p>
           <BookDemoButton size="large" />
 
@@ -196,19 +196,19 @@ export default function Home() {
               7 out of 10
             </p>
             <p className="text-slate-300 text-lg">
-              KPU students said they would use Filament regularly to get answers about scholarships and financial aid.
+              KPU students said they would use Filament regularly instead of waiting for an email response from the financial aid office.
             </p>
             <p className="text-slate-400 text-sm mt-4 font-medium">
               — Student survey, Kwantlen Polytechnic University
             </p>
           </div>
 
-          {/* Space for university logos */}
+          {/* Space for university logos
           <div className="mt-12 border border-dashed border-slate-200 rounded-xl py-8 px-6">
             <p className="text-slate-300 text-sm tracking-wide uppercase">
               University partner logos — coming soon
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -222,18 +222,19 @@ export default function Home() {
             Ready to give your students the answers they need?
           </h2>
           <p className="text-slate-300">
-            See Filament in action — book a 30-minute demo with our team.
+            See Filament in action — book a 30-minute demo.
           </p>
           <BookDemoButton size="large" />
           <div className="mt-6 border-t border-white/10 pt-6 w-full flex flex-col items-center gap-2">
             <p className="text-slate-400 text-sm">
-              Filament — AI-powered scholarship navigation for Canadian universities
+              Filament — Scholarship navigation made easy for Canadian universities
             </p>
             <a
               href={`mailto:${CONTACT_EMAIL}`}
               className="text-slate-400 hover:text-white text-sm transition-colors"
             >
               {CONTACT_EMAIL}
+              {CALENDLY_URL}
             </a>
           </div>
         </div>
