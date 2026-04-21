@@ -38,7 +38,7 @@ export default function Home() {
             Your students are missing scholarships they qualify for. Filament fixes that.
           </h1>
           <p className="text-slate-300 text-xl leading-relaxed mb-10 max-w-2xl mx-auto">
-            Filament is a chatbot that answers your students&apos; scholarship questions instantly — always accurate, always cited, always from your official sources.
+            Filament is a chatbot that answers your students&apos; scholarship questions instantly — always grounded in your official sources, cited every time.
           </p>
           <BookDemoButton size="large" />
 
@@ -73,7 +73,7 @@ export default function Home() {
               {
                 step: "01",
                 title: "We ingest your sources",
-                body: "Filament scrapes your official scholarship and financial aid pages. Your data, your rules — nothing fabricated.",
+                body: "Filament structures information from your official scholarship and financial aid pages into a student-facing assistant.",
               },
               {
                 step: "02",
@@ -139,7 +139,7 @@ export default function Home() {
                   </svg>
                 ),
                 heading: "Zero liability risk",
-                body: "Every answer cites the official source — no misinformation, no hallucinated policy details, no calls from upset parents.",
+                body: "Responses are generated only from your approved scholarship content, with direct source citations for verification. When information is unclear, Filament directs students to the relevant official page instead of guessing. No calls from upset parents.",
               },
               {
                 icon: (
@@ -149,7 +149,17 @@ export default function Home() {
                   </svg>
                 ),
                 heading: "Live in days, not months",
-                body: "No IT project. No integration work. Filament is on your website within days of signing — a script tag is all it takes.",
+                body: "Minimal implementation required - adding a script tag is all it takes. Filament will be live on your website within days of signing.",
+              },
+              {
+                icon: (
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75}
+                      d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 3.741-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                  </svg>
+                ),
+                heading: "Increase scholarship utilization",
+                body: "Help more students discover and apply for relevant funding opportunities before deadlines pass.",
               },
             ].map(({ icon, heading, body }) => (
               <div
@@ -182,7 +192,7 @@ export default function Home() {
             Built with students, validated on campus
           </h2>
           <p className="text-slate-500 mb-14 max-w-xl mx-auto">
-            Real feedback from real students at a real Canadian university.
+            Early student feedback shows strong interest.
           </p>
 
           <div className="bg-[#0f2244] rounded-2xl px-10 py-12 text-white">
