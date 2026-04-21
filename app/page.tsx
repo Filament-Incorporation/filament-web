@@ -83,7 +83,7 @@ export default function Home() {
               {
                 step: "03",
                 title: "Instant, cited answers",
-                body: "Filament responds immediately with the correct answer and a link to the official source — no hallucinations, no liability.",
+                body: "Filament responds immediately with the correct answer and a link to the official source. No generated answers outside your approved sources.",
               },
             ].map(({ step, title, body }) => (
               <div key={step} className="flex flex-col gap-3">
