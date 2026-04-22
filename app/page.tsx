@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CALENDLY_URL = "https://calendly.com/filamentplatform/30min";
 const CONTACT_EMAIL = "hello@filamentplatform.com";
 
@@ -25,6 +27,13 @@ export default function Home() {
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
       <section className="bg-[#0f2244] text-white px-6 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
+          <Image
+            src="/Filament Logo.png"
+            alt="Filament"
+            width={160}
+            height={48}
+            className="mx-auto mb-8 object-contain"
+          />
           <p className="text-[#e07b2a] text-sm font-semibold uppercase tracking-widest mb-4">
             For Canadian University Financial Aid Offices
           </p>
@@ -236,6 +245,13 @@ export default function Home() {
           </p>
           <BookDemoButton size="large" />
           <div className="mt-6 border-t border-white/10 pt-6 w-full flex flex-col items-center gap-2">
+            <Image
+              src="/Filament Logo.png"
+              alt="Filament"
+              width={120}
+              height={36}
+              className="object-contain mb-1 opacity-70"
+            />
             <p className="text-slate-400 text-sm">
               Filament — Scholarship navigation made easy for Canadian universities
             </p>
