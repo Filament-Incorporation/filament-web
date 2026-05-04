@@ -57,6 +57,7 @@ export default function Home() {
             <iframe
               src="https://www.youtube.com/embed/oL4mpEEuL5I"
               title="Filament Demo"
+              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
