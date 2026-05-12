@@ -2,6 +2,7 @@ import Image from "next/image";
 
 const CALENDLY_URL = "https://calendly.com/filamentplatform/30min";
 const CONTACT_EMAIL = "hello@filamentplatform.com";
+const DEMO_VIDEO_ID = "EezOAe7MxWI"; // YouTube video ID — swap this when a new demo is recorded
 
 function BookDemoButton({ size = "default" }: { size?: "default" | "large" }) {
   return (
@@ -56,7 +57,7 @@ export default function Home() {
           {/* Demo video */}
           <div className="mt-14 rounded-xl overflow-hidden border border-white/10 shadow-2xl aspect-video">
             <iframe
-              src="https://www.youtube.com/embed/oL4mpEEuL5I"
+              src={`https://www.youtube.com/embed/${DEMO_VIDEO_ID}`}
               title="Filament Demo"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
