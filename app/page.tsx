@@ -27,16 +27,16 @@ export default function Home() {
     <main>
 
       {/* ── 1. HERO ─────────────────────────────────────────────── */}
-      <section className="bg-[#0f2244] text-white px-6 py-20 md:py-28">
+      <section className="bg-[#0f2244] text-white px-6 pt-6 pb-20 md:pb-28">
+        <Image
+          src="/FilamentLogo.png"
+          alt="Filament"
+          width={96}
+          height={29}
+          priority
+          className="object-contain mb-12"
+        />
         <div className="max-w-3xl mx-auto text-center">
-          <Image
-            src="/FilamentLogo.png"
-            alt="Filament"
-            width={160}
-            height={48}
-            priority
-            className="mx-auto mb-8 object-contain"
-          />
           <p className="text-[#e07b2a] text-sm font-semibold uppercase tracking-widest mb-4">
             For Canadian University Financial Aid Offices
           </p>
