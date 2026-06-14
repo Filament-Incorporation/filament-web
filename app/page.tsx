@@ -78,7 +78,7 @@ export default function Home() {
             How It Works
           </h2>
           <p className="text-center text-slate-500 mb-14 max-w-xl mx-auto">
-            From your official pages to a live chatbot — in days, not months.
+            From your official pages to a live chatbot in days, not months.
           </p>
 
           <div className="grid md:grid-cols-3 gap-10">
