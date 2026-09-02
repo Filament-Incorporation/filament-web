@@ -17,9 +17,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Filament — AI-Powered Scholarship Navigation for Canadian Universities",
+  title: "Filament — Small tools, built in the open",
   description:
-    "Filament answers student scholarship and financial aid questions instantly, with citations. Live on your website in days. Book a demo today.",
+    "Open-source software from Filament: Sensor, voice dictation for Linux; Leonhard, a Lean 4 theorem prover; and other tools. Free to install, honest about what works.",
 };
 
 export default function RootLayout({

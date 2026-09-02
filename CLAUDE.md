@@ -2,10 +2,12 @@
 
 ## Project Purpose
 
-Build a single-page marketing website for Filament — a B2B AI chatbot platform for Canadian universities.
-The website lives at `filamentplatform.com` and has one job: convert university administrators into booked demo calls.
+Build a single-page marketing website for Filament.
+The website lives at `filamentplatform.com`.
 
-Do not add pages. Do not add features. Every decision should serve the single CTA: **Book a Demo**.
+## Rough project context
+Luminous: goal-directed web intel tool. Four layers: Intent → Search →
+Crawl → Synthesis. Inquire more detail by asking humans.
 
 ---
 
@@ -22,77 +24,9 @@ Do not add pages. Do not add features. Every decision should serve the single CT
 ## Brand Identity
 
 - **Company name**: Filament
-- **Tagline**: TBD — use placeholder "The Scholarship Navigator for Your Students"
+- **Tagline**: TBD
 - **Color palette**: Professional, trustworthy, institutional. Deep navy or dark teal as primary. Clean white backgrounds. A single warm accent color for CTAs.
-- **Tone**: Direct, confident, institutional. Speak to administrators, not students. No jargon, no fluff.
-- **Logo**: Text-based wordmark for now — "Filament" in a clean, distinctive font
-
----
-
-## Page Structure
-
-One page only. Five sections in this exact order:
-
-### 1. Hero
-- Headline: Speak directly to the administrator pain point — students asking the same financial aid questions over and over
-- Subheadline: One sentence. What Filament does and for whom.
-- Primary CTA button: "Book a Demo" — links to Calendly (placeholder URL: `https://calendly.com/filamentplatform`)
-- Demo video: Embedded below the headline (placeholder iframe for now — use a grey placeholder box with "Demo Video" label)
-- No navigation bar clutter. Clean, fast, focused.
-
-### 2. How It Works
-- Three steps maximum
-- Step 1: We scrape your official scholarship and financial aid pages
-- Step 2: Students ask questions in plain English through your website
-- Step 3: Filament answers instantly with citations — no hallucinations, no wrong answers
-- Keep it visual. Use numbered steps with simple icons or large numerals.
-
-### 3. Why Filament
-- Three bullet points addressing administrator pain:
-  - "Students get accurate answers 24/7 — your staff handles complex cases, not repetitive questions"
-  - "Every answer cites the official source — no liability, no misinformation"
-  - "Live on your website in days, not months — no IT project required"
-- No feature lists. No tech stack. Pain and outcome only.
-
-### 4. Social Proof
-- Headline: "Built with students, validated on campus"
-- Feature the KPU survey result: "7 out of 10 KPU students said they would use this tool regularly"
-- Design this section to expand — leave visual room for university logos to be added later
-- Keep it honest and understated. One data point, presented cleanly.
-
-### 5. Footer CTA
-- Repeat the "Book a Demo" button
-- Contact email: placeholder for now — `hello@filamentplatform.com`
-- One line company description: "Filament — AI-powered scholarship navigation for Canadian universities"
-- No social links, no sitemap, no legal pages yet
-
----
-
-## CTA Behavior
-
-Every "Book a Demo" button links to: `https://calendly.com/filamentplatform`
-
-This URL is a placeholder. Do not hardcode it deeply — put it in a single config variable at the top of the component so it can be swapped in one place.
-
----
-
-## Design Constraints
-
-- Mobile responsive — administrators open emails on phones. Test at 375px width.
-- Fast load time — no heavy animations, no video autoplay
-- No pricing section
-- No team section  
-- No blog
-- No navigation links to other pages (there are no other pages)
-- Avoid anything that requires ongoing content updates
-
----
-
-## What Success Looks Like
-
-An administrator receives a cold email from Filament, clicks the link, lands on this page, watches the demo video, and clicks "Book a Demo." That is the entire user journey this page needs to support.
-
-If a design decision doesn't serve that journey, remove it.
+- **Tone**: Serious and humourous at the same time.
 
 ---
 
@@ -113,3 +47,42 @@ If a design decision doesn't serve that journey, remove it.
 - Calendly URL (set up account at calendly.com, replace placeholder)
 - Contact email (set up `hello@filamentplatform.com` via Google Workspace or similar)
 - University logos in social proof section (add as deals close)
+
+
+## Working loop, every task
+
+1. Read the file's header comment and its docs/ entry if one exists.
+   Implement against that, not assumption.
+2. If something in the request looks wrong or half-baked, say so plainly
+   before planning around it.
+3. For any decision the comment doesn't already settle, ask as multiple
+   choice, one question at a time. Naming, loop structure, and other pure
+   syntax calls don't need this — make those and explain after.
+4. Once decisions are settled, write the full plan in plan mode. Wait for
+   approval.
+5. Execute one file at a time. Stop after each — explain what it does in
+   plain language — wait for go-ahead before the next.
+6. Commit with a specific, referenceable message: what changed and why,
+   not "update file."
+
+## Never guess
+
+Open the file that defines a field, constant, function, or schema key
+before referencing it. Not there? Ask — don't invent it.
+
+## Hard stop — ask first, no exceptions
+
+- Any change to `config/hunt_spec.py`
+- DB schema, layer responsibilities, budgets/thresholds/stopping conditions
+- API key handling, what gets logged, what gets stored
+- New dependency, new file, user-facing text
+
+## Never (candidates for a hook, not just this line)
+
+API keys never touch the server. Never log request bodies. robots.txt
+respected on every fetch. No raw scraped content stored — findings only.
+
+## Scope
+
+Don't refactor, fix bugs, or touch files you weren't asked to — flag it,
+don't act. Currently building MVP.
